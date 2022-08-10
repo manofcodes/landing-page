@@ -48,11 +48,15 @@ ul.right-links {
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 16px;
-    padding: 40px;
+    padding: 0 20px 30px 20px;
     flex: 1;
     flex-wrap: wrap;
+}
+
+.container-sub {
+    max-width: 500px;
 }
 
 .container h2 {
@@ -63,21 +67,21 @@ ul.right-links {
 
 .container p {
     color: #f9faf8;
-    max-width: max-content;
+    margin-bottom: 10px;
 }
 
-#button {
+.butto {
     background-color: #2882f6;
     color: white;
-    padding: 4px 8px;
+    padding: 4px 15px;
     border: none;
     border-radius: 5px;
 }
 
 .container img {
-    width: 500px;
-    max-width: 1000px;
-    height: 500px;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
 }
 
 .container .imgdiv {
@@ -93,6 +97,8 @@ ul.right-links {
     width: 300px;
     height: 300px;
     border: 2px blue solid;
+    object-fit: cover;
+    border-radius: 7px;
 }
 
 .second div {
@@ -110,3 +116,85 @@ ul.right-links {
     align-items: center;
 }
 
+.blockquote {
+    background-color: #e5e7eb;
+    padding: 30px;
+}
+
+blockquote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+}
+
+.cta {
+    padding: 50px 40px;
+}
+
+.cta .button {
+    background-color: #2882f6;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 35px 30px;
+    border-radius: 10px;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cta-info {
+    line-height: 1;
+}
+
+.cta-info h3, p {
+    color: #f9faf8;
+    margin: 0;
+}
+
+.cta-info h3 {
+    padding-bottom: 5px;
+}
+
+.butto2 {
+    height: max-content;
+    color: #f9faf8;
+    border-color: #f9faf8;
+    border-style: solid;
+    background-color: #2882f6;
+    padding: 5px 12px;
+    align-self: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.butto2:hover, .butto:hover {
+    color: burlywood;
+}
+
+.butto2:active, .butto:active {
+    color: black;
+}
+
+.footer {
+    display: flex;
+    height: 75px;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.footer p {
+
+}
