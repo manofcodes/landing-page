@@ -33,6 +33,14 @@ a {
     color: #e5e7eb;
 }
 
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: black;
+}
+
 ul.right-links {
     padding: 0;
     margin: 0 15px 0 0;
@@ -49,14 +57,20 @@ ul.right-links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
     padding: 0 20px 30px 20px;
-    flex: 1;
+    flex-shrink: 0;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
-.container-sub {
-    max-width: 500px;
+@media screen and (min-width: 481px) {
+    .container-sub {
+        max-width: 50vw;
+    }
+
+    .container .imgdiv {
+        width: 40vw;
+    }
 }
 
 .container h2 {
@@ -65,7 +79,7 @@ ul.right-links {
     font-weight: 900;
 }
 
-.container p {
+.container .container-sub p {
     color: #f9faf8;
     margin-bottom: 10px;
 }
@@ -82,7 +96,7 @@ ul.right-links {
   .container img {
     width: 90vw;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
   } 
 
   .blockquote {
@@ -95,22 +109,16 @@ ul.right-links {
     font-style: italic;
     color: #1f2937;
   }
-
-  /* .right {
-    width: ;
-    display: block;
-    margin-left: auto;
-  } */
 }
 
 .container img {
-    max-width: 600px;
+    max-width: 100%;
     height: 400px;
     object-fit: cover;
 }
 
-.container .imgdiv {
-    display: flex;
+.second {
+    margin-bottom: 50px; 
 }
 
 .second h2 {
@@ -122,8 +130,13 @@ ul.right-links {
     width: 300px;
     height: 300px;
     border: 2px blue solid;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 7px;
+}
+
+.second p {
+    width: 300px;
+    margin: 0;
 }
 
 .second div {
@@ -139,6 +152,7 @@ ul.right-links {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    flex: 1;
 }
 
 .blockquote {
@@ -156,7 +170,7 @@ blockquote {
 
 strong {
     font-size: 24px;
-    color: #1f2937;  
+    color: #1f2937;
 }
 
 .bold {
@@ -188,7 +202,7 @@ strong {
     line-height: 1;
 }
 
-.cta-info h3, p {
+.cta-info h3, .cta-info p {
     color: #f9faf8;
     margin: 0;
 }
@@ -220,7 +234,11 @@ strong {
 .footer {
     display: flex;
     height: 75px;
-    text-align: center;
     justify-content: center;
+    align-items: center;
     padding: 30px 0;
+}
+
+.footer p {
+    color:#f9faf8;
 }
